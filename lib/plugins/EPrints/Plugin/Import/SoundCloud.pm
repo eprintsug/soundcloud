@@ -1,7 +1,6 @@
 package EPrints::Plugin::Import::SoundCloud;
 
 use EPrints::Plugin::Import::TextFile;
-use WebService::Soundcloud;
 
 use strict;
 
@@ -14,8 +13,15 @@ sub new
 	my $self = $class->SUPER::new( %params );
 
 	$self->{name} = "SoundCloud";
-	$self->{visible} = "all";
+	$self->{visible} = "staff";
 	$self->{produce} = [ 'dataobj/eprint', 'list/eprint' ];
+
+	my $rc = EPrints::Utils::require_if_exists( "WebService::Soundcloud" );
+	unless( $rc ) 
+	{
+		$self->{visible} = "";
+		$self->{error} = "Failed to load required module WebService::Soundcloud";
+	}
 
 	return $self;
 }
@@ -25,6 +31,11 @@ sub input_text_fh
 	my( $plugin, %opts ) = @_;
 
 	$plugin->{client_id} = $opts{client_id};
+	unless( defined $plugin->{client_id} )
+	{
+		$plugin->error( "Client ID required, use --arg client_id=12345" );
+		return;
+	}
 	$plugin->{update} = $opts{update};
 
         my $repo = $plugin->{repository};

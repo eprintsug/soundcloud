@@ -31,7 +31,7 @@ sub input_text_fh
 	my( $plugin, %opts ) = @_;
 
 	$plugin->{client_id} = $opts{client_id};
-	unless( defined $plugin->{client_id} )
+	unless( EPrints::Utils::is_set( $plugin->{client_id} ) )
 	{
 		$plugin->error( "Client ID required, use --arg client_id=12345" );
 		return;

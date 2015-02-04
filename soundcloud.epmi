@@ -6,6 +6,14 @@
       <files>
         <file>
           <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/COMMIT_EDITMSG</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>9290db9e6a44f35a200a9529df9a90e2</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>72</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
           <filename>epm/soundcloud/.git/HEAD</filename>
           <mime_type>text/plain</mime_type>
           <hash>4cf2d64e44205fe628ddd534e1151b58</hash>
@@ -102,6 +110,14 @@
         </file>
         <file>
           <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/index</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>174431e3e05d9302679d9d5396fe0c9e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>629</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
           <filename>epm/soundcloud/.git/info/exclude</filename>
           <mime_type>text/plain</mime_type>
           <hash>036208b4a1ab4a235d75c181e685e5a3</hash>
@@ -110,19 +126,235 @@
         </file>
         <file>
           <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/logs/HEAD</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>ca8ae1fc026f1c6575e2b87b0743c66e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>397</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/logs/refs/heads/master</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>ca8ae1fc026f1c6575e2b87b0743c66e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>397</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/0a/91c0d8af5da4e1543742be76fd81b5881692ed</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>a98b63c8ed5a20f5a8293603f96ea16e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>151</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/19/e9c6d7054957cbd1981e6a8f2725a84ae477dd</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>6dc40a30ae378eedca4d4ae1b4a9d983</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>58</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/1c/1c7e26b11a04693a07c98821b1aedaa9e960e5</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>fb0bc5b76c78b533a1423a48d2f13195</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>58</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/1e/78ef4e2faf42e9743e7e754daac6fc887906db</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>6abea4ef0cd3522da9b1b6fe66d86db4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>50</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/26/9c399eaf06983e71d73123a027623921e1c827</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>dd8723effc21ddd5f37fe18ddc5fc81f</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>49</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/2e/d04ec4165e2a0c6288f902677354e990f43cf3</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>b7db819340e4dabf8f0f6b1e42c407d0</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>49</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/30/868d318578141649b0ef7607b77dde2eb09b96</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>b93266adb76ff8cbd0eb736f42292f32</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1736</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/3a/1315a092d686e792c6980dd0172cd589d8d994</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>818008f5ed3ecb82d12ae518bc917858</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>47</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/42/f950800660daf407bdb8ab65c1e51d9eb1e7a4</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>1623cadf45282e0551e274049281d2b8</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>48</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/45/d057f49a298ee105d46d6e7509ab0f36d91970</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>ab7d880d202f9eb1cd935db0a3fcef0b</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>445</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/4a/aca8a89d9a6b29405ff31978cd5fd5e6119bf4</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>1f88d08d0fb87030cd1bad9226cce480</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>150</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/5d/db91ebd20d1c7d36ed111897af00e029ee80c9</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>5a49e846acc8ee12db08932779eadc01</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>214</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/6a/35db05ea83d07a47bad75454c9e5f6c958e52c</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>1f184ce88cf8ba3aed970b7ba37d00aa</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>58</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/74/e18302974c4d2160d0feb286a3a985de75e026</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>1c85dd6bea4e3aab27bf78c57e21281c</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>49</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/79/fd0173333a91c4089a96f7043772518b20d35d</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>7efb66b9f18345ebc4d3e863b81aaa6a</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>131</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/7a/862b93c0f9e40672fc66e1a2d5dde992026dae</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>26110df070a5d5f5033f900b3faddc49</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>49</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/8e/1b5f782f868c7d69f05139a87c178b1627bb6c</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>a91bb2567f7c1c0e66f54108d6209e92</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>136</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/9d/f73cf54cb31c06c969d62d12fb64dbaf2fbdee</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>05f137b37afc7f82aad95d84ecd7a804</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1622</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/a4/5894af74ab2480284d14830083342879cd2cd6</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>9d345c198a1cf6225802ff5046f1e291</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>48</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/c5/3c7d4044951a3be1e3722bc7d8633924b9c404</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>efda3c046b92cccf422cb7f90ef682f7</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>58</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/c7/8393e47b4aac8b3f672349e8500c8edd355557</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>153ee7ac01623aabcd4c6f608806fe62</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>47</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/e6/8005df21785d88edaefb36ba49c6f20841119a</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>694d6fb6126b76e41c258575865f3a6a</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>48</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/ea/1f41fe34f0977c6cb3a5ffc3dcc11a5c9cf85a</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>53b9461c5f0dcebc59350486bf768b67</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>127</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/objects/f2/3bd3cd657cc5388080accbb3fe7bd772ab75b1</filename>
+          <mime_type>application/octet-stream</mime_type>
+          <hash>fe1b175271e0a2d477868d31cc1cf5af</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1229</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/soundcloud/.git/refs/heads/master</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>96a4fc1da4fa0311327ff044f6c6e1c7</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>41</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
           <filename>epm/soundcloud/cfg/cfg.d/soundcloud.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>7a257d53a70424ac6f784b6419926b10</hash>
+          <hash>e106bbabcad4e9b29df61d9626f8fb7f</hash>
           <hash_type>MD5</hash_type>
-          <filesize>169</filesize>
+          <filesize>164</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>plugins/EPrints/Plugin/Import/SoundCloud.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>15df9c14c82dc91dc69288f49ae7efa3</hash>
+          <hash>72e75bcb45bc5138c2f87be1cbfca5fd</hash>
           <hash_type>MD5</hash_type>
-          <filesize>3987</filesize>
+          <filesize>4301</filesize>
         </file>
       </files>
       <mime_type>text/plain</mime_type>
@@ -141,7 +373,7 @@
       <id>timothy.miles-board@london.ac.uk</id>
     </item>
   </creators>
-  <datestamp>2015-02-04 16:15:39</datestamp>
+  <datestamp>2015-02-04 16:31:08</datestamp>
   <title>SoundCloud Import</title>
   <description>Import podcasts from soundcloud</description>
   <requirements>The following modules are required: WebService::Soundcloud</requirements>

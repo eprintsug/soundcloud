@@ -100,7 +100,7 @@ sub convert_input
 	my $repo = $plugin->{repository};
 	my $list = $repo->dataset( "eprint" )->search(
 		filters => [
-			{ meta_fields => [ "source" ], value => $data->{id}, match => "EQ" },
+			{ meta_fields => [ "source" ], value => $data->{uri}, match => "EQ" },
 		],
 	);
 	if( $list->count == 1 )
@@ -119,37 +119,47 @@ sub convert_input
 	}
 
 	$epdata->{type} = "audio";
-	$epdata->{output_media} = "Podcast";
 	push @{ $epdata->{corp_creators} },  $data->{user}->{username};
 
 	my %MAP = (
-		id => "source",
+		uri => "source",
 		title => "title",
 		description => "abstract",
 		permalink_url => "official_url",
 		genre => "keywords",
-		release_year => "date",
+		tag_list => "keywords",
 	);
 	while ( my( $src, $dest ) = each %MAP )
 	{
 		next unless EPrints::Utils::is_set( $data->{$src} );
-		$epdata->{$dest} = $data->{$src};
+		defined $epdata->{$dest} ? $epdata->{$dest} .= " " . $data->{$src} : $epdata->{$dest} = $data->{$src};
 		$epdata->{date_type} = "published" if $dest eq "date";
 	}
 
-	my $stream_url = $data->{stream_url};
-	if( defined $stream_url )
+	if( EPrints::Utils::is_set( $data->{release_year} ) )
+	{
+		$epdata->{date} = sprintf( "%04d-%02d-%02d", $data->{release_year}, $data->{release_month} || 0, $data->{release_day} || 0 );
+	}
+	elsif( EPrints::Utils::is_set( $data->{created_at} ) )
+	{
+		$data->{created_at} =~ m|^([0-9]{4})/([0-9]{2})/([0-9]{2})|;
+		$epdata->{date} = sprintf( "%04d-%02d-%02d", $1, $2, $3 );
+	}
+
+	if( $data->{downloadable} )
 	{
 		# add client id parameter to stream url
-		my $url = URI->new( $stream_url );
+		my $url = URI->new( $data->{download_url} );
 		$url->query_form( { client_id => $plugin->{client_id} } );
 
+		my $license = $data->{license};
+		$license =~ s/-/_/g if defined $license;
 		my $document = {
 			eprintid => defined $epdata->{eprintid} ? $epdata->{eprintid} : undef,
 			main => "podcast.mp3",
 			format => "audio",
 			security => "public",
-			license => defined $data->{license} ? $data->{license} : undef,
+			license => defined $license ? $license : undef,
 		};
 		push @{ $document->{files} }, {
 			filename => $document->{main},

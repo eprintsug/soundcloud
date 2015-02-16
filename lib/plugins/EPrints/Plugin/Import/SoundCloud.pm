@@ -146,17 +146,17 @@ sub convert_input
 		$epdata->{date} = sprintf( "%04d-%02d-%02d", $1, $2, $3 );
 	}
 
-	if( $data->{downloadable} )
+	if( $data->{downloadable} || $data->{streamable} )
 	{
 		# add client id parameter to stream url
-		my $url = URI->new( $data->{download_url} );
+		my $url = URI->new( $data->{downloadable} ? $data->{download_url} : $data->{stream_url} );
 		$url->query_form( { client_id => $plugin->{client_id} } );
 
 		my $license = $data->{license};
 		$license =~ s/-/_/g if defined $license;
 		my $document = {
 			eprintid => defined $epdata->{eprintid} ? $epdata->{eprintid} : undef,
-			main => "podcast.mp3",
+			main => sprintf( "%s.%s", $data->{permalink}, $data->{downloadable} ? $data->{original_format} : "mp3" ), # stream is 128kbs mp3
 			format => "audio",
 			security => "public",
 			license => defined $license ? $license : undef,

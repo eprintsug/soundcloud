@@ -2,6 +2,8 @@
 
 Import podcasts from SoundCloud using the '/tracks' API (https://developers.soundcloud.com/docs/api/reference#tracks).
 
+Developed in conjunction with the London School of Hygiene and Tropical Medicine (http://www.lshtm.ac.uk).
+
 In order to use this plugin you will need to register for a Client ID http://soundcloud.com/you/apps
 
 Example usage:

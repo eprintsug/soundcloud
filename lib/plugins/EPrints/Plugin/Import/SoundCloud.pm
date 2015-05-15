@@ -15,6 +15,7 @@ sub new
 	$self->{name} = "SoundCloud";
 	$self->{visible} = "staff";
 	$self->{produce} = [ 'dataobj/eprint', 'list/eprint' ];
+    $self->{license_map} = $self->param( "license_map" ) || {};
 
 	my $rc = EPrints::Utils::require_if_exists( "WebService::Soundcloud" );
 	unless( $rc ) 
@@ -152,8 +153,7 @@ sub convert_input
 		my $url = URI->new( $data->{downloadable} ? $data->{download_url} : $data->{stream_url} );
 		$url->query_form( { client_id => $plugin->{client_id} } );
 
-		my $license = $data->{license};
-		$license =~ s/-/_/g if defined $license;
+		my $license = $plugin->{license_map}->{$data->{license}} || $data->{license};
 		my $document = {
 			eprintid => defined $epdata->{eprintid} ? $epdata->{eprintid} : undef,
 			main => sprintf( "%s.%s", $data->{permalink}, $data->{downloadable} ? $data->{original_format} : "mp3" ), # stream is 128kbs mp3

@@ -54,7 +54,7 @@ sub input_text_fh
 
 		if( $scid !~ /^\d+$/ )
 		{
-			$scid = "http://soundcloud.com/$scid" unless $scid =~ /^http/;
+			$scid = "https://soundcloud.com/$scid" unless $scid =~ /^http/;
 			my $user = $sc->get_object( '/resolve', { client_id => $plugin->{client_id}, url => $scid } );
 			unless( defined $user && defined $user->{id} )
 			{
